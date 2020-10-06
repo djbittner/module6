@@ -10,7 +10,7 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual("Python2!: 97", val_input.score_input("Python2!", 97))
 
     def test_score_input_test_score_below_range(self):
-        self.assertEqual(True, False)
+        self.assertEqual("Invalid test score, try again!", val_input.score_input("Python3!", -1))
 
     def test_score_input_test_score_above_range(self):
         self.assertEqual(True, False)
