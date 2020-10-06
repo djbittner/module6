@@ -19,7 +19,7 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(True, False)
 
     def test_score_input_invalid_message(self):
-        self.assertEqual(True, False)
+        self.assertEqual("Not an acceptable score, try again!", val_input.score_input("Python3!", -1, "Not an acceptable score, try again!"))
 
 
 if __name__ == '__main__':
